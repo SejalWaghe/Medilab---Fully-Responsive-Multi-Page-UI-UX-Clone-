@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medilab</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <!-- Navbar1 -->
+<nav class="navbar">
+  <div class="container">
+    <div class="row w-100 nav1">
+      <div class="col-6 small-text">
+        <span>#Staysafe</span>
+        <span>#Stayathome</span>
+      </div>
+      <div class="col-6 text-end contact-details d-none d-md-block">
+        <span>
+          <i class="fa-solid fa-envelope p-2"></i>contact@medilab.com
+        </span>
+        <span>
+          <i class="fa-solid fa-phone p-2"></i>(001) 1234 4321
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="text-muted opacity-2 m-0">
+  <hr />
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" alt="logo" class="img-fluid" id="logo" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse w-100 justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <!-- Home Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="homeDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="secondhome.html">Second Home</a></li>
+          </ul>
+        </li>
+
+        <!-- About Us Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="servicesDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+            <li><a class="dropdown-item" href="secondservices.html">Second Services</a></li>
+            <li><a class="dropdown-item" href="servicedetail.html">Service Detail</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact Us Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+
+        <!-- More Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="moreDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="moreDropdown">
+            <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
+            <li><a class="dropdown-item" href="team.html">Team</a></li>
+            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="career.html">Career</a></li>
+            <li><a class="dropdown-item" href="error404.html">Error 404</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-btn ms-lg-3 mt-3 mt-lg-0">
+        <a class="btn btn-primary text-uppercase px-4 py-2" href="#" role="button">Book Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <!-- about us header  -->
+
+    <!-- header section  -->
+    <header>
+      <div class="about-us-bg-img">
+        <div class="header-section-services">
+          <div class="container">
+            <div class="row service-row align-items-center">
+              <div class="col-12 col-lg-6 col-md-6 aboutus-col py-5">
+                <div class="s-head text-white text-lg-start py-lg-5">
+                  <h1 class="h1">About Us</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                    elit tellus, luctus nec ullamcorper mattis, pulvinar
+                    dapibus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- our services   -->
+    <section>
+      <div class="ourservice mb-5">
+        <div class="container">
+          <div class="aboutus-img col-12">
+            <img src="img/section2.jpg" alt="Doctors team" />
+          </div>
+
+          <div
+            class="ourservice-body bg-light"
+            data-aos="fade-right"
+            data-aos-delay="5"
+            data-aos-duration="500"
+          >
+            <div class="ourservice-text col-12">
+              <div class="ourservice-head mb-4">
+                <h5>Who We Are</h5>
+              </div>
+              <div class="ourservice-head2">
+                <h2 class="text-capitalize">
+                  Professional Doctors with 20+ years of experience
+                </h2>
+              </div>
+              <div class="ourservice-para">
+                <p class="text-muted mb-md-4 mt-md-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorpe. Consectetur adipiscing
+                  elit. Lorem ipsum dolor sit amet ut elit tellus, luctus nec
+                  ullamcorpe.
+                </p>
+              </div>
+              <div class="ourservice-button">
+                <a
+                  href="#"
+                  class="btn btn-info text-light"
+                  type="button"
+                  role="button"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="ourservice-imgtr-aboutus">
+            <img src="img/tr-corner.png" alt="semi-circle" />
+          </div>
+          <div class="ourservice-imgbl-aboutus">
+            <img
+             
+              src="img/services-bl.png"
+              alt="semi-circle "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- aboutus service-card section  -->
+    <section id="aboutus " class="aubg-color">
+      <div class="container">
+        <div class="row service-header text-center mb-5">
+          <div class="col-lg-12 col-md-12 col-12">
+            <div class="vaccine-text-body" >
+              <span>Our Values</span>
+              <h2>Our Principle</h2>
+              <p class="text-muted">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorpe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container w-100">
+        <div class="row">
+          <div class="col-12 col-lg-4 col-md-4">
+            <div class="aboutus-body text-center"  data-aos="fade-up">           
+              <div class="about-us-img">
+                <img width="100" src="img/ele12.png" alt="ele3" />
+              </div>
+              <h6>Helpful</h6>
+              <div class="aboutus-para text-muted">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus.  
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 col-md-4">
+            <div class="aboutus-body text-center"  data-aos="fade-up">           
+              <div class="about-us-img">
+                <img width="100" src="img/ele-13.png" alt="ele3" />
+              </div>
+              <h6 >Learner</h6>
+              <div class="aboutus-para text-muted">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus.  
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4">
+          <div class="aboutus-body text-center"  data-aos="fade-up">           
+            <div class="about-us-img">
+              <img width="100" src="img/ele-14.png" alt="ele3" />
+            </div>
+            <h6>Empathic</h6>
+            <div class="aboutus-para text-muted">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus luctus.  
+            </div>
+          </div>
+        </div>
+      </div>    
+    </section>
+
+<!-- why choose us section about us  -->
+    <section class="book-now-section-boutus  py-md-5 align-items-center">
+      <div class="container aboutus-progressbar ">
+        <div class="row">
+            <!-- header images  -->
+            <div class="col-12 col-md-6 my-lg-4 my-md-4">
+              <div class="book-images">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="book-img1 mb-3">
+                      <img
+                        src="img/general-q-services.jpg"
+                        class="img-fluid mb-md-3 img1"
+                        data-aos="fade-right"
+                        alt=" Image 1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="book-img2 mb-3">
+                  <img
+                    src="img/element4.jpg"
+                    class="img-fluid mb-md-3 img2"
+                    alt="  Image 2"
+                  />
+                </div>
+                <div class="ourservice-imgtrs-aboutus">
+                  <img src="img/tr-corner.png" alt="semi-circle" />
+                </div>
+                <div class="ourservice-imgbls">
+                  <img src="img/bl-corner.png" alt="semi-circle" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="aboutus-text w-100">
+                <div class="book-now-head mb-4">
+                  <h5>
+                    Who We Are</h5>
+                </div>
+                <div class="book-now-head2">
+                  <h2 class="text-capitalize">
+                    Our Doctor Specialist & <br> Experience
+                  </h2>
+                </div>
+                <div class="book-now-para">
+                  <p class="text-muted mb-4 mt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorpe. Consectetur adipiscing elit. Lorem ipsum dolor sit amet ut elit tellus, luctus nec ullamcorpe. 
+                  </p>                  
+                </div>
+                <div class="about-us-progress-bar">
+                  <div class="first-progress my-3">
+                    <div class="progress-bar-text">
+                      <h6>Primary Care</h6>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 90%">90%</div>
+                    </div>
+                  </div>
+                  <div class="first-progress my-3">
+                    <div class="progress-bar-text">
+                      <h6>Home Care</h6>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 80%">80%</div>
+                    </div>
+                  </div>
+                  <div class="first-progress my-3">
+                    <div class="progress-bar-text">
+                      <h6>Eye Center Care</h6>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 85%">85%</div>
+                    </div>
+                  </div>
+                  <div class="first-progress my-3">
+                    <div class="progress-bar-text">
+                      <h6>Mobile  Care</h6>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 70%">70%</div>
+                    </div>
+                  </div>
+                  <div class="first-progress my-3">
+                    <div class="progress-bar-text">
+                      <h6>Dental Care</h6>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar" style="width: 93%">93%</div>
+                    </div>
+                  </div>
+                </div>           
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- counter up section  -->
+
+<div class="counter-sec">
+  <div class="container">
+    <div class="row g-3 countersec-cardbody">
+      <div class="col-6 col-lg-3 col-md-3">
+        <div class="card text-center countersec-body mb-3" data-aos="fade-up">
+          <div class="counter-number">10</div>
+          <div class="counter-detail">Year Experience</div> 
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-3">
+        <div class="card text-center countersec-body mb-3" data-aos="fade-up">
+          <div class="counter-number">22</div>
+          <div class="counter-detail">Doctor Specialist</div> 
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-3">
+        <div class="card text-center countersec-body mb-3" data-aos="fade-up">
+          <div class="counter-number">30</div>
+          <div class="counter-detail">Award Winner</div> 
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-3">
+        <div class="card text-center countersec-body mb-3" data-aos="fade-up">
+          <div class="counter-number">99</div>
+          <div class="counter-detail">Satisfied Patient</div> 
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+
+  <!-- appointment-section -->
+
+  <section class="app-sec-ser">
+    <div class="container ">
+      <div class="appointment-body my-lg-100 my-md-100">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-md-6 text-body order-2 order-md-1">
+            <div class="app-text">
+              <div class="app-header fs-5 fw-bold text-primary">
+                <h1>Get Your Free Medical Checkup</h1>
+              </div>
+              <div class="app-para mb-3 mt-2">
+                <p class="text-muted mt-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis
+                </p>
+              </div>
+              <div class="app-button mt-5">
+                <button type="button" class="btn text-light btn-lg">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-lg-6 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+            <div class="app-imgs">
+              <img
+                src="img/app-img.png"
+                class="img-fluid"
+                alt="nurse"
+                data-aos="fade-up"
+              />
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="ourservice-imgtrss">
+            <img src="img/blservice-corner.png" alt="semi-circle" />
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer
+      class=" footer-service text-center text-lg-start bg-body-tertiary text-muted bg-light  py-lg-5 py-1"
+    >
+      <!-- Section: Links  -->
+      <section >
+        <div class="footer container text-center text-md-start">
+          <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ft-left">
+              <img src="img/logo.png" alt="logo" id="footer-logo" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              </p>
+            </div>
+            <div class="col-md-2"></div>
+            <div
+              class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 pt-md-2 ft-right"
+            >
+              <h6 class="text-uppercase fw-bold foot-head mb-3">Company</h6>
+              <li class="ft-list-item mb-3  ">
+                <a href="#"class="text-reset">
+                  <span class=" text-muted">Home</span>
+                </a>
+              </li>
+              <li class="ft-list-item mb-3  ">
+                <a href="#"class="text-reset">
+                  <span class=" text-muted">About Us</span>
+                </a>
+              </li>
+              <li class="ft-list-item mb-3  ">
+                <a href="#"class="text-reset">
+                  <span class=" text-muted">Careers</span>
+                </a>
+              </li><li class="ft-list-item mb-3  ">
+                <a href="#"class="text-reset">
+                  <span class=" text-muted">Contact Us</span>
+                </a>
+              </li><li class="ft-list-item mb-3  ">
+                <a href="#"class="text-reset">
+                  <span class=" text-muted">FAQ</span>
+                </a>
+              </li>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div
+              class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4 pt-2 ft-right-com"
+            >
+              <!-- Links -->
+              <div class="ft-right ">
+                <h6 class=" mb-4 foot-head">Company</h6>
+                <li class="icon-list-item mb-3  ">
+                  <a href="#">
+                    <span><i class="far fa-building me-3 text-info"></i></span>
+                    <span class=" text-muted">Medilab Building</span>
+                  </a>
+                </li>
+                <li class="icon-list-item mb-3 ">
+                  <a href="#">
+                    <span><i class="fas fa-map-pin me-3 text-info"></i> </span>
+                    <span class=" text-muted ">Victoria Street, London, United Kingdom</span>
+                  </a>
+                </li>
+                <li class="icon-list-item mb-3 ">
+                  <a href="#">
+                    <span><i class="fas fa-phone me-3 text-info"></i></span>
+                    <span class=" text-muted">(001) 2222 3434</span>
+                  </a>
+                </li>
+                <li class="icon-list-item mb-3 ">
+                  <a href="#">
+                    <span>
+                      <i class="fas fa-mail-bulk me-3 text-info"></i
+                    ></span>
+                    <span class=" text-muted"> contact@medilab.com</span>
+                  </a>
+                </li>
+              </div>
+
+               <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <hr class="text-secondary" />
+      <div class="text-center py-lg-2">
+        <a class="text-reset" href="https://mdbootstrap.com/"
+          >Medilab Template Kit by Rootlayers</a
+        >
+      </div>
+    </footer>
+ 
+    <!-- CountUp.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/countUp.js"></script>
+    <!-- aos js data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: "100",
+        duration: 900,
+        once: false,
+      });
+    </script>
+    <script>
+      $(".counter-number").counterUp({time:2000});
+    </script>
+  </body>
+</html>
